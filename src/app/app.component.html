@@ -1,0 +1,65 @@
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <div align="center">
+    <img src="assets/welcome2.gif" width="400" height="50" class="d-inline-block align-top" alt="">
+  </div>
+  </a>
+</nav>
+
+
+
+
+
+  <br>
+  <div align="center">
+  <img src="assets/giphy.gif" width="200" height="150"></div>
+<div align="center"><img src="assets/title.png" style="align-items: center; justify-content: center;"></div>
+
+<div align="center"><img src="assets/cute-cat.gif" width="200" height="200"></div>
+
+<br>
+
+<h2 style="text-align: center; border: 1px solid; box-sizing: border-box; border-spacing: 20px; border-color: aqua;">MEDIASOCIAL</h2>
+
+
+<div class="socmed">
+<div style="text-align: center; padding-left: 3cm; padding-right: 3cm;">
+  <a href="https://www.instagram.com/zhfriazmn/"><img src="assets/insta.png" height="50" height="50" [hspace]="20"></a>
+  <a href="https://github.com/zaperi/Web-API/"><img src="assets/gith.png" height="50" height="50" [hspace]="20"></a>
+  <a href="https://www.tiktok.com/@zaperi24"><img src="assets/tt.png" height="50" height="50" [hspace]="20"></a>
+</div>
+</div>
+
+  <br>
+
+
+
+
+  <div align="center">
+      <input class="form-control me-sm-2" #channelName type="text" style="width: 650px;" placeholder="SEARCH CHANNEL HERE">
+  <br>
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit" (click)="getData()">Search</button>
+
+  </div>
+
+  <br>
+  <br>
+
+  <div align="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ie99t-tkLZw"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <br>
+  <br>
+
+<div class="grid">
+
+  <ul *ngFor="let channel of channels">
+    <a target="_blank" href="https://www.youtube.com/channel/{{channel.id.channelId}}">
+      <img class="img-thumbnail" width="200" height="100" src="{{channel.snippet.thumbnails.medium.url}}" />
+    </a>
+    <br>
+   <label class="cName" ><h3> {{channel.snippet.channelTitle}} </h3></label>
+  </ul>
+</div>

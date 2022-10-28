@@ -1,0 +1,22 @@
+@import url("https://bootswatch.com/5/vapor/bootstrap.min.css");
+
+
+.grid {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 8%;
+    column-gap: 40px;
+    border: 1px solid;
+
+    box-shadow: 5px 10px cyan;
+  }
+.cName {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 8px cyan;
+}
+
+
+
+
